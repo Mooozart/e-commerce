@@ -1,0 +1,112 @@
+/* explicar para não se complicar no futuro pq haja gambiarra em pelo amor de deus */
+/* Remove margens e espaçamentos padrão do navegador */
+* {
+    margin: 0;          /* tira margem padrão */
+    padding: 0;         /* tira espaçamento interno padrão */
+    box-sizing: border-box; /* faz largura e a altura considerar borda e padding */
+}
+
+body {
+    font-family: Arial, sans-serif; 
+}
+
+.container {
+    display: grid; /* ativa o CSS Grid */
+
+    /* Define as áreas da página */
+    grid-template-areas:
+        "header"
+        "banner"
+        "produtos"
+        "footer";
+
+    /* Define alturas das linhas */
+    grid-template-rows: auto 200px 1fr auto;
+    /*
+    auto = altura automática (header e footer)
+    200px = altura fixa do banner
+    1fr = ocupa o restante da tela (empurra o footer pra baixo)
+    */
+}
+
+.container {
+    display: grid;
+
+    /* estrutura simplificada */
+    grid-template-rows: auto auto 1fr auto;
+
+    min-height: 100vh; /* altura mínima da tela inteira */
+    /*
+    Isso garante que o footer fique sempre no final da página (até pq ele gruado no topo é feio demais */
+}
+
+.header {
+    grid-area: header; /* conecta com o grid-template-areas */
+
+    background-color: #222; 
+    color: white; /* cor do texto */
+    padding: 15px; /* espaço interno */
+
+    display: grid; /* usa grid dentro do header */
+    grid-template-columns: 1fr 2fr;
+    /*
+    1fr = espaço da logo
+    2fr = espaço do menu (maior)
+    */
+
+    align-items: center; /* centraliza verticalmente */
+}
+
+.logo {
+    font-size: 20px; /* tamanho do texto */
+    font-weight: bold; /* deixa em negrito */
+}
+
+.menu a {
+    color: white; /* cor do texto */
+    text-decoration: none; /* remove sublinhado */
+    margin: 10px; /* espaço entre os links */
+}
+
+/* BANNER */
+.banner {
+    grid-area: banner; /* posição no grid */
+
+    background-color: #eee; /* fundo cinza claro */
+    text-align: center; /* centraliza texto */
+    padding: 40px; 
+}
+
+/* ÁREA DE PRODUTOS */
+.produtos {
+    grid-area: produtos; /* posição no grid */
+
+    display: grid; /* ativa grid */
+    grid-template-columns: repeat(3, 1fr);
+    /*
+    cria 3 colunas iguais
+    */
+
+    gap: 20px; /* espaço entre os produtos */
+    padding: 20px; 
+}
+
+/* CARD (CADA PRODUTO) */
+.card {
+    border: 1px solid #ccc; /* borda cinza */
+    padding: 15px; 
+    text-align: center; /* centraliza conteúdo */
+}
+
+.card img {
+    width: 100%; /* imagem ocupa toda a largura do card */
+}
+
+.footer {
+    grid-area: footer; /* posição no grid */
+
+    background-color: #222; /* fundo escuro */
+    color: white; /* texto branco */
+    text-align: center; /* centralizado */
+    padding: 10px; 
+}
