@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,7 +19,7 @@
             <nav class="menu">
                 <a href="index.html">Home</a>
                 <a href="catalogo.html">Catálogo</a>
-                <a href="#">Carrinho</a>
+                <a href="carrinho.html">Carrinho</a>
                 <a href="#">Clientes</a>
                 <a href="#">Pedidos</a>
                 <a href="#">Suporte</a>
@@ -30,15 +29,17 @@
         <!-- PRODUTOS -->
         <main class="produtos">
 
-            <!-- 15 CARDS -->
-            <!-- você pode repetir esse modelo -->
+<form action="carrinho.php" method="POST" class="card">
+    <img src="Maus.jpg">
+    <h3>Maus</h3>
+    <p>R$ 39,90</p>
 
-            <div class="card">
-                <img src="Maus.jpg">
-                <h3>Maus</h3>
-                <p>R$ 39,90</p>
-                <button>Comprar</button>
-            </div>
+    <input type="hidden" name="nome" value="Maus">
+    <input type="hidden" name="preco" value="39.90">
+    <input type="hidden" name="imagem" value="Maus.jpg">
+
+    <button type="submit">Comprar</button>
+</form>
 
             <div class="card">
                 <img src="1984_livro.jpg">
