@@ -45,10 +45,10 @@ body {
 
     background-color: #222; 
     color: white; /* cor do texto */
-    padding: 15px; /* espaço interno */
+    padding: 10px 20px; /* ajusta espaçamento do header */
 
     display: grid; /* usa grid dentro do header */
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: auto 1fr; /* logo ocupa só o tamanho dela, menu ocupa o resto */
     /*
     1fr = espaço da logo
     2fr = espaço do menu (maior)
@@ -60,6 +60,15 @@ body {
 .logo {
     font-size: 20px; /* tamanho do texto */
     font-weight: bold; /* deixa em negrito */
+
+    display: flex; /* permite alinhamento interno */
+    align-items: center; /* centraliza a logo verticalmente */
+}
+
+.menu {
+    display: flex; /* organiza os links em linha */
+    justify-content: center; /* centraliza os links */
+    gap: 20px; /* espaçamento entre os links */
 }
 
 .menu a {
@@ -99,7 +108,9 @@ body {
 }
 
 .card img {
-    width: 100%; /* imagem ocupa toda a largura do card */
+    width: 100%;          /* ocupa largura do card */
+    height: 300px;        /* altura fixa do espaço */
+    object-fit: contain;  /* mantém proporção SEM cortar */
 }
 
 .footer {
@@ -109,4 +120,27 @@ body {
     color: white; /* texto branco */
     text-align: center; /* centralizado */
     padding: 10px; 
+}
+
+.logo img {
+    height: 50px; /* define tamanho da logo sem distorcer */
+    width: auto; /* mantém proporção */
+}
+.card button {
+    background-color: #0d5c8c; /* cor do botão */
+    color: white; /* texto branco */
+    border: none; /* remove a borda feiona lá que vem por padrão */
+    padding: 10px 15px; /* tamanho interno */
+    border-radius: 5px; /* bordas arredondadas */
+    cursor: pointer; /* meramente estetico mas passa uma sensação de conforto pra mim eu passar o mouse e virar uma mãozinha kkkkkkkkk */
+    font-size: 14px;
+    transition: 0.3s; /* animação suave */
+}
+
+/* efeito quando passa o mouse */
+.card button:hover {
+    background-color: #094a6d; /* cor mais escura */
+}
+.card p {
+    margin-bottom: 10px; /* espaço abaixo do preço */
 }
