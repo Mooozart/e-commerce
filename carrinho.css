@@ -1,0 +1,24 @@
+/* Centraliza no meio da tela */
+.carrinho-vazio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* centro vertical */
+    align-items: center; /* centro horizontal */
+    min-height: calc(100vh - 120px); /* ocupa a tela (desconta header/footer) */
+    text-align: center;
+}
+
+/* Aumentando o carrinho */
+.carrinho-vazio img {
+    width: 220px; 
+    margin-bottom: 25px;
+    opacity: 0.9;
+}
+
+/* Texto maior com mais destaque */
+.carrinho-vazio p {
+    font-size: 20px; 
+    color: #444;
+    max-width: 500px;
+    line-height: 1.6;
+}
