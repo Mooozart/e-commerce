@@ -1,0 +1,50 @@
+.clientes {
+    padding: 20px;
+}
+
+.clientes h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.lista-clientes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.cliente {
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 10px;
+    background: #fff;
+    transition: 0.3s;
+}
+
+.cliente:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.cliente h3 {
+    margin-bottom: 10px;
+}
+
+.cliente p {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.cliente a {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    background: #0d5c8c;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 6px;
+}
+
+.cliente a:hover {
+    background: #094a6d;
+}

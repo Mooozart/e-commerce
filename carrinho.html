@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,26 +16,58 @@
         <!-- HEADER -->
         <header class="header">
             <div class="logo">
-                <img src="/images/ET-simple.png" alt="Entre Linhas">
+                <img src="images/ET-simple.png" alt="Entre Linhas">
             </div>
 
             <nav class="menu">
-                <a href="index.html">Home</a>
-                <a href="catalogo.html">Catálogo</a>      
-                <a href="carrinho.html">Carrinho</a>
-                <a href="#">Clientes</a>
-                <a href="#">Pedidos</a>
-                <a href="#">Suporte</a>
+            <a href="index.html">Home</a>
+            <a href="catalogo.html">Catálogo</a>
+            <a href="carrinho.html">Carrinho</a>
+            <a href="clientes.html">Clientes</a>
+            <a href="pedido.html">Pedidos</a>
+            <a href="suporte.html">Suporte</a>
             </nav>
         </header>
 
-        <!-- CARRINHO VAZIO -->
-        <main class="carrinho-vazio">
-            <img src="/images/carrinho_de_compras_black_png.png" alt="Carrinho vazio">
-            <p>
-                Você ainda não adicionou nada ao seu carrinho.<br>
-                Confira as ofertas em nosso catálogo.
-            </p>
+        <!-- CARRINHO -->
+        <main class="carrinho">
+
+            <h1>Seu Carrinho</h1>
+
+            <!-- ITEM 1 -->
+            <div class="item-carrinho">
+                <img src="images/1984_livro.jpg" alt="1984">
+
+                <div class="info">
+                    <h3>1984</h3>
+                    <p>Autor: George Orwell</p>
+                    <p>Preço: R$ 24,90</p>
+                    <p>Quantidade: 1</p>
+                </div>
+
+                <button class="remover">Remover</button>
+            </div>
+
+            <!-- ITEM 2 -->
+            <div class="item-carrinho">
+                <img src="images/Maus.jpg" alt="Maus">
+
+                <div class="info">
+                    <h3>Maus</h3>
+                    <p>Autor: Art Spiegelman</p>
+                    <p>Preço: R$ 39,90</p>
+                    <p>Quantidade: 1</p>
+                </div>
+
+                <button class="remover">Remover</button>
+            </div>
+
+            <!-- TOTAL -->
+            <div class="total">
+                <h2>Total: R$ 64,80</h2>
+                <a href="checkout.html" class="btn-finalizar">Finalizar Compra</a>
+            </div>
+
         </main>
 
         <footer class="footer">
@@ -43,4 +76,5 @@
 
     </div>
 </body>
+
 </html>

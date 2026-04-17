@@ -1,17 +1,21 @@
 /* explicar para não se complicar no futuro pq haja gambiarra em pelo amor de deus */
 /* Remove margens e espaçamentos padrão do navegador */
 * {
-    margin: 0;          /* tira margem padrão */
-    padding: 0;         /* tira espaçamento interno padrão */
-    box-sizing: border-box; /* faz largura e a altura considerar borda e padding */
+    margin: 0;
+    /* tira margem padrão */
+    padding: 0;
+    /* tira espaçamento interno padrão */
+    box-sizing: border-box;
+    /* faz largura e a altura considerar borda e padding */
 }
 
 body {
-    font-family: Arial, sans-serif; 
+    font-family: Arial, sans-serif;
 }
 
 .container {
-    display: grid; /* ativa o CSS Grid */
+    display: grid;
+    /* ativa o CSS Grid */
 
     /* Define as áreas da página */
     grid-template-areas:
@@ -35,164 +39,160 @@ body {
     /* estrutura simplificada */
     grid-template-rows: auto auto 1fr auto;
 
-    min-height: 100vh; /* altura mínima da tela inteira */
+    min-height: 100vh;
+    /* altura mínima da tela inteira */
     /*
     Isso garante que o footer fique sempre no final da página (até pq ele gruado no topo é feio demais */
 }
 
 .header {
-    grid-area: header; /* conecta com o grid-template-areas */
+    grid-area: header;
+    /* conecta com o grid-template-areas */
 
-    background-color: #222; 
-    color: white; /* cor do texto */
-    padding: 10px 20px; /* ajusta espaçamento do header */
+    background-color: #222;
+    color: white;
+    /* cor do texto */
+    padding: 10px 20px;
+    /* ajusta espaçamento do header */
 
-    display: grid; /* usa grid dentro do header */
-    grid-template-columns: auto 1fr; /* logo ocupa só o tamanho dela, menu ocupa o resto */
+    display: grid;
+    /* usa grid dentro do header */
+    grid-template-columns: auto 1fr;
+    /* logo ocupa só o tamanho dela, menu ocupa o resto */
     /*
     1fr = espaço da logo
     */
 
-    align-items: center; /* centraliza verticalmente */
+    align-items: center;
+    /* centraliza verticalmente */
 }
 
 .logo {
-    font-size: 20px; /* tamanho do texto */
-    font-weight: bold; /* deixa em negrito */
+    font-size: 20px;
+    /* tamanho do texto */
+    font-weight: bold;
+    /* deixa em negrito */
 
-    display: flex; /* permite alinhamento interno */
-    align-items: center; /* centraliza a logo verticalmente */
+    display: flex;
+    /* permite alinhamento interno */
+    align-items: center;
+    /* centraliza a logo verticalmente */
 }
 
 .menu {
-    display: flex; /* organiza os links em linha */
-    justify-content: center; /* centraliza os links */
-    gap: 20px; /* espaçamento entre os links */
+    display: flex;
+    /* organiza os links em linha */
+    justify-content: center;
+    /* centraliza os links */
+    gap: 20px;
+    /* espaçamento entre os links */
 }
 
 .menu a {
-    color: white; /* cor do texto */
-    text-decoration: none; /* remove sublinhado */
-    margin: 10px; /* espaço entre os links */
+    color: white;
+    /* cor do texto */
+    text-decoration: none;
+    /* remove sublinhado */
+    margin: 10px;
+    /* espaço entre os links */
 }
 
 /* BANNER */
 .banner {
-    grid-area: banner; /* posição no grid */
-    background-color: #eee; /* fundo cinza claro */
-    text-align: center; /* centraliza texto */
-    padding: 40px; 
+    grid-area: banner;
+    /* posição no grid */
+
+    background-color: #eee;
+    /* fundo cinza claro */
+    text-align: center;
+    /* centraliza texto */
+    padding: 40px;
 }
 
 /* ÁREA DE PRODUTOS */
 .produtos {
-    grid-area: produtos; /* posição no grid */
+    grid-area: produtos;
+    /* posição no grid */
 
-    display: grid; /* ativa grid */
+    display: grid;
+    /* ativa grid */
     grid-template-columns: repeat(3, 1fr);
     /*
     cria 3 colunas iguais
     */
 
-    gap: 20px; /* espaço entre os produtos */
-    padding: 20px; 
+    gap: 20px;
+    /* espaço entre os produtos */
+    padding: 20px;
 }
 
 /* CARD (CADA PRODUTO) */
 .card {
-    border: 1px solid #ccc; /* borda cinza */
-    padding: 15px; 
-    text-align: center; /* centraliza conteúdo */
+    border: 1px solid #ccc;
+    /* borda cinza */
+    padding: 15px;
+    text-align: center;
+    /* centraliza conteúdo */
 }
 
 .card img {
-    width: 100%;          /* ocupa largura do card */
-    height: 300px;        /* altura fixa do espaço */
-    object-fit: contain;  /* mantém proporção SEM cortar */
+    width: 100%;
+    /* ocupa largura do card */
+    height: 300px;
+    /* altura fixa do espaço */
+    object-fit: contain;
+    /* mantém proporção SEM cortar */
 }
 
 .footer {
-    grid-area: footer; /* posição no grid */
+    grid-area: footer;
+    /* posição no grid */
 
-    background-color: #222; /* fundo escuro */
-    color: white; /* texto branco */
-    text-align: center; /* centralizado */
-    padding: 10px; 
+    background-color: #222;
+    /* fundo escuro */
+    color: white;
+    /* texto branco */
+    text-align: center;
+    /* centralizado */
+    padding: 10px;
 }
 
 .logo img {
-    height: 50px; /* define tamanho da logo sem distorcer */
-    width: auto; /* mantém proporção */
+    height: 50px;
+    /* define tamanho da logo sem distorcer */
+    width: auto;
+    /* mantém proporção */
+}
+
+.card button {
+    background-color: #0d5c8c;
+    /* cor do botão */
+    color: white;
+    /* texto branco */
+    border: none;
+    /* remove a borda feiona lá que vem por padrão */
+    padding: 10px 15px;
+    /* tamanho interno */
+    border-radius: 5px;
+    /* bordas arredondadas */
+    cursor: pointer;
+    /* meramente estetico mas passa uma sensação de conforto pra mim eu passar o mouse e virar uma mãozinha kkkkkkkkk */
+    font-size: 14px;
+    transition: 0.3s;
+    /* animação suave */
 }
 
 /* efeito quando passa o mouse */
 .card button:hover {
-    background-color: #094a6d; /* cor mais escura */
+    background-color: #094a6d;
+    /* cor mais escura */
 }
+
 .card p {
-    margin-bottom: 10px; /* espaço abaixo do preço */
+    margin-bottom: 10px;
+    /* espaço abaixo do preço */
 }
 .card-link{
     text-decoration: none;
     color: black;
-}
-/* VISUAL DOS CARDS */
-/* animação moderna */
-.card:hover {
-    background: #fff;
-    border: 1px solid #e6e6e6;
-    border-radius: 12px;
-    transition: transform 0.25s ease, box-shadow 0.25s ease;
-    transform: translateY(-6px);
-    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
-}
-
-/* imagem mais polida */
-.card img {
-    width: 100%;
-    height: 280px;
-    object-fit: contain;   /* não corta a imagem */
-    background: #f5f5f5;   /* fundo bonito pra sobrar espaço */
-    padding: 10px;         /* respiro visual */
-    border-radius: 8px;
-}
-
-/* título mais forte */
-.card h3 {
-    font-size: 18px;
-    margin: 10px 0;
-    color: #111;
-}
-
-/* texto mais leve e organizado */
-.card p {
-    font-size: 13px;
-    line-height: 1.4;
-    color: #444;
-    margin-bottom: 8px;
-}
-
-/* destaque no preço */
-.card p strong {
-    color: #000;
-}
-
-/* botão mais moderno */
-.card button {
-    margin-top: 10px;
-    width: 100%;
-    background: linear-gradient(135deg, #0d5c8c, #0a3f5c);
-    color: white;
-    border: none;
-    padding: 12px;
-    border-radius: 8px;
-    cursor: pointer;
-    font-weight: bold;
-    letter-spacing: 0.5px;
-    transition: 0.3s;
-}
-
-.card button:hover {
-    transform: scale(1.03);
-    background: linear-gradient(135deg, #094a6d, #062c40);
 }

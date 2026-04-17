@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="checkout.css">
+</head>
+
+<body>
+<div class="container">
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="logo">
+            <img src="images/ET-simple.png" alt="Entre Linhas">
+        </div>
+
+        <nav class="menu">
+            <a href="index.html">Home</a>
+            <a href="catalogo.html">Catálogo</a>
+            <a href="carrinho.html">Carrinho</a>
+            <a href="clientes.html">Clientes</a>
+            <a href="pedido.html">Pedidos</a>
+            <a href="suporte.html">Suporte</a>
+        </nav>
+    </header>
+
+    <!-- CHECKOUT -->
+    <main class="checkout">
+
+        <h1>Finalizar Compra</h1>
+
+        <form action="pedido.php" method="POST">
+
+            <!-- DADOS DO CLIENTE -->
+            <h2>Dados do Cliente</h2>
+
+            <input type="text" name="nome" placeholder="Nome completo" required>
+            <input type="email" name="email" placeholder="Email" required>
+
+            <!-- ENDEREÇO -->
+            <h2>Endereço</h2>
+
+            <input type="text" name="endereco" placeholder="Endereço" required>
+            <input type="text" name="cidade" placeholder="Cidade" required>
+
+            <!-- PAGAMENTO -->
+            <h2>Pagamento</h2>
+
+            <select name="pagamento" required>
+                <option value="">Escolha o método</option>
+                <option value="cartao">Cartão</option>
+                <option value="pix">PIX</option>
+                <option value="boleto">Boleto</option>
+            </select>
+
+            <!-- RESUMO -->
+            <h2>Resumo</h2>
+
+            <p>2 produtos no carrinho</p>
+            <p><strong>Total: R$ 64,80</strong></p>
+
+            <button type="submit">Confirmar Pedido</button>
+
+        </form>
+
+    </main>
+
+    <footer class="footer">
+        <p>© Entre Linhas - Todos os direitos reservados</p>
+    </footer>
+
+</div>
+</body>
+</html>
