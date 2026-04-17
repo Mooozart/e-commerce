@@ -23,7 +23,7 @@
             <a href="catalogo.html">Catálogo</a>
             <a href="carrinho.html">Carrinho</a>
             <a href="clientes.html">Clientes</a>
-            <a href="pedido.html">Pedidos</a>
+            <a href="#">Pedidos</a>
             <a href="suporte.html">Suporte</a>
         </nav>
     </header>
@@ -33,33 +33,26 @@
 
         <h1>Finalizar Compra</h1>
 
-        <form action="pedido.php" method="POST">
+        <!-- 🔥 AQUI MUDA -->
+        <form action="sucesso.html">
 
-            <!-- DADOS DO CLIENTE -->
             <h2>Dados do Cliente</h2>
+            <input type="text" placeholder="Nome completo" required>
+            <input type="email" placeholder="Email" required>
 
-            <input type="text" name="nome" placeholder="Nome completo" required>
-            <input type="email" name="email" placeholder="Email" required>
-
-            <!-- ENDEREÇO -->
             <h2>Endereço</h2>
+            <input type="text" placeholder="Endereço" required>
+            <input type="text" placeholder="Cidade" required>
 
-            <input type="text" name="endereco" placeholder="Endereço" required>
-            <input type="text" name="cidade" placeholder="Cidade" required>
-
-            <!-- PAGAMENTO -->
             <h2>Pagamento</h2>
-
-            <select name="pagamento" required>
+            <select required>
                 <option value="">Escolha o método</option>
-                <option value="cartao">Cartão</option>
-                <option value="pix">PIX</option>
-                <option value="boleto">Boleto</option>
+                <option>Cartão</option>
+                <option>PIX</option>
+                <option>Boleto</option>
             </select>
 
-            <!-- RESUMO -->
             <h2>Resumo</h2>
-
             <p>2 produtos no carrinho</p>
             <p><strong>Total: R$ 64,80</strong></p>
 
