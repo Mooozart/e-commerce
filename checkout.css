@@ -1,42 +1,81 @@
+/* ÁREA PRINCIPAL DO CHECKOUT */
 .checkout {
-    padding: 30px;
-    max-width: 600px;
-    margin: auto;
+    padding: 30px; 
+    /* cria espaço interno pra não ficar tudo grudado */
+
+    max-width: 600px; 
+    /* limita a largura máxima (não deixa o formulário gigante) */
+
+    margin: auto; 
+    /* centraliza o bloco horizontalmente na tela */
 }
 
+/* TÍTULO PRINCIPAL */
 .checkout h1 {
-    margin-bottom: 20px;
+    margin-bottom: 20px; 
+    /* espaço abaixo do título */
 }
 
+/* SUBTÍTULOS (Dados, Endereço, Pagamento) */
 .checkout h2 {
-    margin-top: 20px;
-    margin-bottom: 10px;
+    margin-top: 20px; 
+    /* espaço acima do subtítulo */
+
+    margin-bottom: 10px; 
+    /* espaço abaixo */
 }
 
+/* FORMULÁRIO */
 .checkout form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+    display: flex; 
+    /* ativa flexbox */
+
+    flex-direction: column; 
+    /* organiza os elementos em coluna (um embaixo do outro) */
+
+    gap: 10px; 
+    /* espaço entre os campos */
 }
 
+/* CAMPOS DE INPUT E SELECT */
 .checkout input,
 .checkout select {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 6px;
+    padding: 10px; 
+    /* espaço interno (deixa o campo maior e mais confortável) */
+
+    border: 1px solid #ccc; 
+    /* borda cinza clara */
+
+    border-radius: 6px; 
+    /* cantos arredondados */
 }
 
+/* BOTÃO DE CONFIRMAR */
 .checkout button {
-    margin-top: 20px;
-    background: #0d5c8c;
-    color: white;
-    border: none;
-    padding: 12px;
-    border-radius: 8px;
-    cursor: pointer;
-    font-weight: bold;
+    margin-top: 20px; 
+    /* espaço acima do botão */
+
+    background: #0d5c8c; 
+    /* cor principal do botão */
+
+    color: white; 
+    /* texto branco */
+
+    border: none; 
+    /* remove borda padrão */
+
+    padding: 12px; 
+    /* tamanho interno do botão */
+
+    border-radius: 8px; 
+    /* bordas arredondadas */
+
+    font-weight: bold; 
+    /* deixa o texto mais destacado */
 }
 
+/* EFEITO AO PASSAR O MOUSE */
 .checkout button:hover {
-    background: #094a6d;
+    background: #094a6d; 
+    /* cor mais escura para dar feedback visual */
 }

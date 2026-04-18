@@ -11,7 +11,8 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #ECFDF5; /* verde bem claro */
+    background-color: #ECFDF5;
+    /* verde bem claro */
 }
 
 .container {
@@ -40,7 +41,8 @@ body {
     grid-area: header;
     /* conecta com o grid-template-areas */
 
-    background-color: #14532D; /* verde escuro */
+    background-color: #14532D;
+    /* verde escuro */
     color: white;
     /* cor do texto */
     padding: 10px 20px;
@@ -89,7 +91,8 @@ body {
 }
 
 .menu a:hover {
-    color: #6EE7B7; /* verde claro */
+    color: #6EE7B7;
+    /* verde claro */
 }
 
 /* BANNER */
@@ -97,7 +100,8 @@ body {
     grid-area: banner;
     /* posição no grid */
 
-    background: linear-gradient(135deg, #16A34A, #4ADE80); /* verde moderno */
+    background: linear-gradient(135deg, #16A34A, #4ADE80);
+    /* verde moderno */
     /* fundo cinza claro */
     text-align: center;
     /* centraliza texto */
@@ -124,7 +128,8 @@ body {
 
 /* CARD (CADA PRODUTO) */
 .card {
-    border: 1px solid #A7F3D0; /* verde claro */
+    border: 1px solid #A7F3D0;
+    /* verde claro */
     /* borda cinza */
     padding: 15px;
     text-align: center;
@@ -139,14 +144,16 @@ body {
     /* altura fixa do espaço */
     object-fit: contain;
     /* mantém proporção SEM cortar */
-    background-color: #F0FDF4; /* leve verde */
+    background-color: #F0FDF4;
+    /* leve verde */
 }
 
 .footer {
     grid-area: footer;
     /* posição no grid */
 
-    background-color: #14532D; /* verde escuro */
+    background-color: #14532D;
+    /* verde escuro */
     /* fundo escuro */
     color: white;
     /* texto branco */
@@ -163,7 +170,8 @@ body {
 }
 
 .card button {
-    background-color: #16A34A; /* verde principal */
+    background-color: #16A34A;
+    /* verde principal */
     /* cor do botão */
     color: white;
     /* texto branco */
@@ -182,20 +190,23 @@ body {
 
 /* efeito quando passa o mouse */
 .card button:hover {
-    background-color: #14532D; /* verde mais escuro */
+    background-color: #14532D;
+    /* verde mais escuro */
     /* cor mais escura */
 }
 
 .card p {
     margin-bottom: 10px;
     /* espaço abaixo do preço */
-    color: #15803D; /* destaque no preço */
+    color: #15803D;
+    /* destaque no preço */
 }
 
-.card-link{
+.card-link {
     text-decoration: none;
     color: black;
 }
+
 .logo h4 {
     font-family: Georgia, "Times New Roman", serif;
     margin-left: 12px;

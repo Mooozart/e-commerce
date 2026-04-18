@@ -1,92 +1,148 @@
 /* ÁREA PRINCIPAL */
 main {
     display: flex;
-    flex-direction: column; /* empilha título + form */
+    /* usa flexbox para organizar os elementos */
+
+    flex-direction: column;
+    /* empilha os elementos verticalmente (título + formulário) */
+
     align-items: center;
+    /* centraliza horizontalmente */
+
     justify-content: center;
+    /* centraliza verticalmente */
+
     padding: 30px;
+    /* espaçamento interno */
 }
 
 /* TÍTULO */
 main h1 {
     margin-bottom: 20px;
+    /* espaço abaixo do título */
+
     color: #14532D;
+    /* cor verde escuro para destaque */
+
     text-align: center;
+    /* centraliza o texto */
 }
 
 /* CONTAINER DO FORM */
 main form {
     width: 100%;
+    /* ocupa toda largura disponível */
+
     max-width: 500px;
+    /* limita largura máxima para não ficar gigante */
 
     background: white;
-    padding: 30px;
-    border-radius: 12px;
+    /* fundo branco para contraste */
 
-    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    padding: 30px;
+    /* espaçamento interno */
+
+    border-radius: 12px;
+    /* bordas arredondadas */
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    /* sombra */
+
     display: flex;
+    /* usa flexbox dentro do form */
+
     flex-direction: column;
+    /* organiza os campos em coluna */
 }
 
 /* LABELS */
 form label {
     font-weight: bold;
+    /* deixa o texto mais forte (destaque) */
+
     margin-bottom: 5px;
+    /* espaço entre label e input */
+
     color: #1B4332;
+    /* verde escuro */
 }
 
 /* INPUTS E TEXTAREA */
 form input,
 form textarea {
     padding: 12px;
+    /* espaço interno */
+
     border: 1px solid #A7F3D0;
+    /* borda verde clara */
+
     border-radius: 8px;
+    /* cantos arredondados */
+
     outline: none;
+    /* remove a borda padrão azul do navegador */
 
     font-size: 14px;
+    /* tamanho da fonte */
+
     margin-bottom: 15px;
+    /* espaço entre os campos */
 
     transition: 0.2s;
+    /* animação suave (usada no foco) */
 }
 
 /* FOCO */
 form input:focus,
 form textarea:focus {
     border-color: #16A34A;
-    box-shadow: 0 0 0 2px rgba(22,163,74,0.2);
+    /* muda a cor da borda quando o usuário clica */
+
+    box-shadow: 0 0 0 2px rgba(22, 163, 74, 0.2);
+    /* cria um brilho leve verde ao redor */
 }
 
 /* TEXTAREA */
 form textarea {
     resize: none;
+    /* impede o usuário de redimensionar a caixa */
 }
 
-/* BOTÃO */
+/* BOTÃO (teve ia pq o caba não é de ferro) */
 form button {
     margin-top: 10px;
+    /* espaço acima do botão */
+
     padding: 12px;
+    /* tamanho interno do botão */
 
     background: linear-gradient(135deg, #16A34A, #14532D);
+    /* gradiente verde (efeito moderno) */
+
     color: white;
+    /* texto branco */
 
     border: none;
+    /* remove borda padrão */
+
     border-radius: 8px;
+    /* bordas arredondadas */
 
     font-weight: bold;
+    /* texto mais forte */
+
     cursor: pointer;
+    /* cursor vira mãozinha */
 
     transition: 0.3s;
+    /* animação suave */
 }
 
 /* HOVER */
 form button:hover {
     transform: scale(1.03);
-    background: linear-gradient(135deg, #15803D, #0f3d2e);
-}
+    /* aumenta levemente o botão ao passar o mouse */
 
-/* RESPONSIVO */
-@media (max-width: 600px) {
-    main form {
-        padding: 20px;
-    }
+    background: linear-gradient(135deg, #15803D, #0f3d2e);
+    /* escurece o gradiente */
 }

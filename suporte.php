@@ -1,13 +1,12 @@
 <?php
-
+// Pega o valor digitado no campo "nome" do formulário (enviado via POST)
 $nome = $_POST["nome"];
 $email = $_POST["email"];
 $assunto = $_POST["assunto"];
 $mensagem = $_POST["mensagem"];
 
-// gera número de protocolo aleatório
+// Gera um número aleatório entre 100000 e 999999
 $protocolo = rand(100000, 999999);
-
 ?>
 
 <!DOCTYPE html>
@@ -56,7 +55,7 @@ $protocolo = rand(100000, 999999);
     </main>
 
     <footer class="footer">
-        <p>© Entre Linhas</p>
+        <p>© Entre Linhas - Todos os direitos reservados</p>
     </footer>
 
 </div>

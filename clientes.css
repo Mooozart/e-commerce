@@ -1,50 +1,97 @@
 .clientes {
-    padding: 20px;
+    padding: 20px; 
+    /* espaço interno geral da página */
 }
 
+/* TÍTULO PRINCIPAL */
 .clientes h1 {
-    text-align: center;
-    margin-bottom: 20px;
+    text-align: center; 
+    /* centraliza o texto */
+
+    margin-bottom: 20px; 
+    /* espaço abaixo do título */
 }
 
+/* LISTA DE CLIENTES (GRID) */
 .lista-clientes {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    display: grid; 
+    /* ativa CSS Grid */
+
+    grid-template-columns: repeat(3, 1fr); 
+    /* cria 3 colunas iguais */
+
+    gap: 20px; 
+    /* espaço entre os cards */
 }
 
+/* CARD DE CADA CLIENTE */
 .cliente {
-    border: 1px solid #A7F3D0; /* verde claro */
-    padding: 15px;
-    border-radius: 10px;
-    background: #fff;
-    transition: 0.3s;
+    border: 1px solid #A7F3D0; 
+    /* borda verde clara */
+
+    padding: 15px; 
+    /* espaço interno */
+
+    border-radius: 10px; 
+    /* cantos arredondados */
+
+    background: #fff; 
+    /* fundo branco */
+
+    transition: 0.3s; 
+    /* animação suave */
 }
 
+/* EFEITO AO PASSAR O MOUSE */
 .cliente:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transform: translateY(-5px); 
+    /* faz o card subir um pouquinho */
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); 
+    /* adiciona sombra, meramente estetico, é melhor testar e vê se mantem no futuro */
 }
 
+/* NOME DO CLIENTE */
 .cliente h3 {
-    margin-bottom: 10px;
+    margin-bottom: 10px; 
+    /* espaço abaixo do nome */
 }
 
+/* INFORMAÇÕES (email, telefone) */
 .cliente p {
-    font-size: 14px;
-    margin-bottom: 5px;
+    font-size: 14px; 
+    /* tamanho menor para texto secundário */
+
+    margin-bottom: 5px; 
+    /* espaço entre linhas */
 }
 
+/* LINK "VER DETALHES" */
 .cliente a {
-    display: inline-block;
-    margin-top: 10px;
-    text-decoration: none;
-    background: #16A34A; /* verde */
-    color: white;
-    padding: 8px 12px;
-    border-radius: 6px;
+    display: inline-block; 
+    /* permite aplicar padding e margin corretamente */
+
+    margin-top: 10px; 
+    /* espaço acima do botão */
+
+    text-decoration: none; 
+    /* remove sublinhado */
+
+    background: #16A34A; 
+    /* verde (ação positiva) */
+
+    color: white; 
+    /* texto branco */
+
+    padding: 8px 12px; 
+    /* tamanho interno */
+
+    border-radius: 6px; 
+    /* cantos arredondados */
 }
 
+/* EFEITO HOVER NO BOTÃO */
 .cliente a:hover {
-    background: #14532D; /* verde escuro */
+    background: #14532D; 
+    /* verde mais escuro */
 }

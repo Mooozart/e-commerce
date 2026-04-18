@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <title>Pedido Realizado</title>
@@ -7,97 +8,148 @@
     <link rel="stylesheet" href="style.css">
 
     <style>
-        .pedido-container {
-            padding: 30px;
-            max-width: 600px;
-            margin: 30px auto;
-            background: white;
-            border-radius: 10px;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
-            text-align: center;
-        }
+/* CAIXA PRINCIPAL DO PEDIDO */
+.pedido-container {
+    padding: 30px; 
+    /* espaço interno para não deixar o conteúdo colado nas bordas */
 
-        .pedido-container h1 {
-            margin-bottom: 20px;
-        }
+    max-width: 600px; 
+    /* limita a largura máxima da caixa */
 
-        .pedido-container p {
-            margin: 8px 0;
-            font-size: 16px;
-        }
+    margin: 30px auto; 
+    /* centraliza na tela e cria espaço em cima/baixo */
 
-        .status {
-            margin-top: 15px;
-            padding: 10px;
-            border-radius: 8px;
-            background: #fff3cd;
-            color: #856404;
-            font-weight: bold;
-        }
+    background: white; 
+    /* fundo branco para destacar do restante da página */
 
-        .btn-voltar {
-            display: inline-block;
-            margin-top: 20px;
-            background: #0d5c8c;
-            color: white;
-            padding: 12px 20px;
-            border-radius: 8px;
-            text-decoration: none;
-            font-weight: bold;
-        }
+    border-radius: 10px; 
+    /* bordas arredondadas */
 
-        .btn-voltar:hover {
-            background: #094a6d;
-        }
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1); 
+    /* sombra suave para dar efeito de "card" */
+
+    text-align: center; 
+    /* centraliza todo o conteúdo dentro da caixa */
+}
+
+/* TÍTULO */
+.pedido-container h1 {
+    margin-bottom: 20px; 
+    /* espaço abaixo do título */
+}
+
+/* TEXTOS (dados do pedido) */
+.pedido-container p {
+    margin: 8px 0; 
+    /* espaço entre as linhas */
+
+    font-size: 16px; 
+    /* tamanho padrão de leitura */
+}
+
+/* STATUS DO PEDIDO */
+.status {
+    margin-top: 15px; 
+    /* espaço acima da caixa de status */
+
+    padding: 10px; 
+    /* espaço interno */
+
+    border-radius: 8px; 
+    /* bordas arredondadas */
+
+    background: #fff3cd; 
+    /* fundo amarelo claro (alerta/informação) */
+
+    color: #856404; 
+    /* cor do texto combinando com o fundo */
+
+    font-weight: bold; 
+    /* destaca o status */
+}
+
+/* BOTÃO VOLTAR */
+.btn-voltar {
+    display: inline-block; 
+    /* permite aplicar padding e margin corretamente */
+
+    margin-top: 20px; 
+    /* espaço acima do botão */
+
+    background: #0d5c8c; 
+    /* cor principal do botão */
+
+    color: white; 
+    /* texto branco */
+
+    padding: 12px 20px; 
+    /* tamanho interno */
+
+    border-radius: 8px; 
+    /* bordas arredondadas */
+
+    text-decoration: none; 
+    /* remove sublinhado */
+
+    font-weight: bold; 
+    /* texto mais forte */
+}
+
+/* EFEITO AO PASSAR O MOUSE */
+.btn-voltar:hover {
+    background: #094a6d; 
+    /* cor mais escura para dar feedback visual */
+}
     </style>
 </head>
 
 <body>
-<div class="container">
+    <div class="container">
 
-    <header class="header">
-        <div class="logo">
-            <img src="images/ET-simple.png" alt="Entre Linhas">
-            <h4>ENTRE LINHAS</h4>
-        </div>
+        <header class="header">
+            <div class="logo">
+                <img src="images/ET-simple.png" alt="Entre Linhas">
+                <h4>ENTRE LINHAS</h4>
+            </div>
 
-        <nav class="menu">
-            <a href="index.html">Home</a>
-            <a href="catalogo.html">Catálogo</a>
-            <a href="carrinho.html">Carrinho</a>
-            <a href="clientes.html">Clientes</a>
-            <a href="pedido.html">Pedidos</a>
-            <a href="suporte.html">Suporte</a>
-        </nav>
-    </header>
+            <nav class="menu">
+                <a href="index.html">Home</a>
+                <a href="catalogo.html">Catálogo</a>
+                <a href="carrinho.html">Carrinho</a>
+                <a href="clientes.html">Clientes</a>
+                <a href="pedido.html">Pedidos</a>
+                <a href="suporte.html">Suporte</a>
+            </nav>
+        </header>
 
-    <!-- CONTEÚDO -->
-    <main class="pedido-container">
+        <!-- CONTEÚDO -->
+        <main class="pedido-container">
 
-        <h1>Pedido realizado com sucesso!</h1>
+            <h1>Pedido realizado com sucesso!</h1>
 
-        <p><strong>Cliente:</strong> João Silva</p>
-        <p><strong>Email:</strong> joao57_Silva@hotmail.com</p>
-        <p><strong>Endereço:</strong> Rua Alegria, 54 - Sergipe</p>
-        <p><strong>Pagamento:</strong> Boleto</p>
+            <p><strong>Cliente:</strong> João Silva</p>
+            <p><strong>Email:</strong> joao57_Silva@hotmail.com</p>
+            <p><strong>Endereço:</strong> Rua Alegria, 54 - Sergipe</p>
+            <p><strong>Pagamento:</strong> Boleto</p>
 
-        <br>
+            <br>
 
-        <p><strong>Número do Pedido:</strong> #4821</p>
+            <p><strong>Número do Pedido:</strong> #4821</p>
 
-        <div class="status">
-            Status: Em processamento
-        </div>
+            <div class="status">
+                Status: Em processamento
+            </div>
 
-        <a href="index.html" class="btn-voltar">Voltar para a loja</a>
+            <a href="index.html" class="btn-voltar">Voltar para a loja</a>
 
-    </main>
+        </main>
 
-    <!-- FOOTER -->
-    <footer class="footer">
-        <p>© Entre Linhas - Todos os direitos reservados</p>
-    </footer>
+        <!-- FOOTER -->
+        <footer class="footer">
+            <p>© Entre Linhas - Todos os direitos reservados</p>
+        </footer>
 
-</div>
+    </div>
 </body>
+
 </html>
