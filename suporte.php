@@ -22,9 +22,10 @@ $protocolo = rand(100000, 999999);
 <div class="container">
 
     <header class="header">
-        <div class="logo">
-            <img src="images/ET-simple.png">
-        </div>
+            <div class="logo">
+                <img src="images/ET-simple.png" alt="Entre Linhas">
+                <h4>ENTRE LINHAS</h4>
+            </div>
 
         <nav class="menu">
             <a href="index.html">Home</a>
@@ -41,7 +42,7 @@ $protocolo = rand(100000, 999999);
 
         <p><strong>Nome:</strong> <?php echo $nome; ?></p>
         <p><strong>Email:</strong> <?php echo $email; ?></p>
-        <p><strong>Assunto:</strong> <?php echo $assunto; ?></p>    
+        <p><strong>Assunto:</strong> <?php echo $assunto; ?></p>
 
         <p><strong>Mensagem:</strong><br>
         <?php echo $mensagem; ?></p>

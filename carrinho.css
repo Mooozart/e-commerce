@@ -11,7 +11,7 @@
     display: flex;
     align-items: center;
     gap: 20px;
-    border: 1px solid #ddd;
+    border: 1px solid #A7F3D0; /* verde claro */
     padding: 15px;
     margin-bottom: 15px;
     border-radius: 10px;
@@ -23,7 +23,7 @@
     width: 100px;
     height: 140px;
     object-fit: contain;
-    background: #f5f5f5;
+    background: #F0FDF4; /* verde leve */
     padding: 5px;
     border-radius: 6px;
 }
@@ -39,7 +39,7 @@
 
 /* BOTÃO REMOVER */
 .remover {
-    background: #d9534f;
+    background: #dc2626; /* vermelho mais moderno */
     color: white;
     border: none;
     padding: 10px;
@@ -48,7 +48,7 @@
 }
 
 .remover:hover {
-    background: #b52b27;
+    background: #991b1b; /* vermelho escuro */
 }
 
 /* TOTAL */
@@ -60,7 +60,7 @@
 .btn-finalizar {
     display: inline-block;
     margin-top: 10px;
-    background: #0d5c8c;
+    background: #16A34A; /* verde */
     color: white;
     padding: 12px 20px;
     border-radius: 8px;
@@ -70,5 +70,5 @@
 }
 
 .btn-finalizar:hover {
-    background: #094a6d;
+    background: #14532D; /* verde escuro */
 }

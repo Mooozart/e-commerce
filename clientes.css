@@ -14,7 +14,7 @@
 }
 
 .cliente {
-    border: 1px solid #ccc;
+    border: 1px solid #A7F3D0; /* verde claro */
     padding: 15px;
     border-radius: 10px;
     background: #fff;
@@ -39,12 +39,12 @@
     display: inline-block;
     margin-top: 10px;
     text-decoration: none;
-    background: #0d5c8c;
+    background: #16A34A; /* verde */
     color: white;
     padding: 8px 12px;
     border-radius: 6px;
 }
 
 .cliente a:hover {
-    background: #094a6d;
+    background: #14532D; /* verde escuro */
 }

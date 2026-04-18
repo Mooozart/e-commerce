@@ -11,6 +11,7 @@
 
 body {
     font-family: Arial, sans-serif;
+    background-color: #ECFDF5; /* verde bem claro */
 }
 
 .container {
@@ -31,25 +32,15 @@ body {
     200px = altura fixa do banner
     1fr = ocupa o restante da tela (empurra o footer pra baixo)
     */
-}
-
-.container {
-    display: grid;
-
-    /* estrutura simplificada */
-    grid-template-rows: auto auto 1fr auto;
-
     min-height: 100vh;
-    /* altura mínima da tela inteira */
-    /*
-    Isso garante que o footer fique sempre no final da página (até pq ele gruado no topo é feio demais */
+    grid-template-rows: auto auto 1fr auto;
 }
 
 .header {
     grid-area: header;
     /* conecta com o grid-template-areas */
 
-    background-color: #222;
+    background-color: #14532D; /* verde escuro */
     color: white;
     /* cor do texto */
     padding: 10px 20px;
@@ -97,16 +88,21 @@ body {
     /* espaço entre os links */
 }
 
+.menu a:hover {
+    color: #6EE7B7; /* verde claro */
+}
+
 /* BANNER */
 .banner {
     grid-area: banner;
     /* posição no grid */
 
-    background-color: #eee;
+    background: linear-gradient(135deg, #16A34A, #4ADE80); /* verde moderno */
     /* fundo cinza claro */
     text-align: center;
     /* centraliza texto */
     padding: 40px;
+    color: white;
 }
 
 /* ÁREA DE PRODUTOS */
@@ -128,11 +124,12 @@ body {
 
 /* CARD (CADA PRODUTO) */
 .card {
-    border: 1px solid #ccc;
+    border: 1px solid #A7F3D0; /* verde claro */
     /* borda cinza */
     padding: 15px;
     text-align: center;
     /* centraliza conteúdo */
+    background-color: white;
 }
 
 .card img {
@@ -142,13 +139,14 @@ body {
     /* altura fixa do espaço */
     object-fit: contain;
     /* mantém proporção SEM cortar */
+    background-color: #F0FDF4; /* leve verde */
 }
 
 .footer {
     grid-area: footer;
     /* posição no grid */
 
-    background-color: #222;
+    background-color: #14532D; /* verde escuro */
     /* fundo escuro */
     color: white;
     /* texto branco */
@@ -165,7 +163,7 @@ body {
 }
 
 .card button {
-    background-color: #0d5c8c;
+    background-color: #16A34A; /* verde principal */
     /* cor do botão */
     color: white;
     /* texto branco */
@@ -184,15 +182,25 @@ body {
 
 /* efeito quando passa o mouse */
 .card button:hover {
-    background-color: #094a6d;
+    background-color: #14532D; /* verde mais escuro */
     /* cor mais escura */
 }
 
 .card p {
     margin-bottom: 10px;
     /* espaço abaixo do preço */
+    color: #15803D; /* destaque no preço */
 }
+
 .card-link{
     text-decoration: none;
     color: black;
+}
+.logo h4 {
+    font-family: Georgia, "Times New Roman", serif;
+    margin-left: 12px;
+    font-size: 20px;
+    letter-spacing: 3px;
+    color: #D1FAE5;
+    text-transform: uppercase;
 }
